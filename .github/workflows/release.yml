@@ -67,7 +67,6 @@ jobs:
           cabal install hspec-discover
           cabal install hlint
           ghc --version
-          haskell-language-server-wrapper --version
           cabal --version
           if [ "$RUNNER_OS" == "macOS" ]; then
               echo "Installing llvm-14 on $RUNNER_OS"
